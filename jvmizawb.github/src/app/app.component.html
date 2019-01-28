@@ -1,0 +1,19 @@
+<mat-grid-list cols="4" rows="4">
+  <mat-grid-tile  [colspan]=2  [rowspan]=2 [style.background]="'lightblue'">
+    <nav>
+      <a routerLink='/heroes'>Heroes</a>
+      <a routerLink='/dashboard'>Dashboard</a>
+    </nav>
+    <router-outlet></router-outlet>
+    <!-- <app-messages></app-messages> -->
+  </mat-grid-tile>
+  <mat-grid-tile  [colspan]=2  [rowspan]=3 [style.background]="'lightgreen'">
+    <app-news></app-news>
+  </mat-grid-tile>
+  <mat-grid-tile  [colspan]=1  [rowspan]=1 [style.background]="'lightpink'">
+    Three
+  </mat-grid-tile>
+  <mat-grid-tile  [colspan]=1  [rowspan]=1 [style.background]="'#DDBDF1'">
+    Four
+  </mat-grid-tile>
+</mat-grid-list>
